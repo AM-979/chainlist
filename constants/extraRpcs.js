@@ -161,6 +161,8 @@ const privacyStatement = {
     "We, Envelop, do not collect and/or process any personal data other than publicly available data.  Check out our privacy statement here: https://docs.envelop.is/legal/privacy-policy",
   "4everland":
     "At 4EVERLAND, we are committed to protecting the privacy and security of your personal information. While we do collect certain data from our users, such as names, email addresses, account credentials, and usage information, we take robust measures to safeguard this data. We retain your personal information only for as long as your account remains active, plus an additional 6 months after closure: https://www.4everland.org/privacy-policy.",
+  conduit: "We retain Personal Data about you for as long as necessary to provide you with our services. In some cases we retain Personal Data for longer, if doing so is necessary to comply with our legal obligations, resolve disputes or collect fees owed, or is otherwise permitted or required by applicable law, rule or regulation.https://www.conduit.xyz/privacy-policy",
+  nal: "Sometimes we collect your information automatically when you interact with our services, and sometimes we collect your information directly from individuals. At times, we may collect information about an individual from other sources and third parties, even before our first direct interaction.https://www.nal.network/privacy.html"
 };
 
 export const extraRpcs = {
@@ -1430,7 +1432,7 @@ export const extraRpcs = {
     rpcs: [
       "https://public-en-cypress.klaytn.net",
       {
-        url: "https://klaytn-mainnet-rpc.allthatnode.com:8551",
+        url: "https://klaytn-mainnet.g.allthatnode.com/full/evm",
         tracking: "yes",
         trackingDetails: privacyStatement.allthatnode,
       },
@@ -1552,6 +1554,16 @@ export const extraRpcs = {
         url: "wss://blast-rpc.publicnode.com",
         tracking: "none",
         trackingDetails: privacyStatement.publicnode,
+      },
+      {
+        url: "https://blast.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
+      },
+      {
+        url: "wss://blast.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
       },
     ],
   },
@@ -1685,6 +1697,16 @@ export const extraRpcs = {
         url: "https://api.tatum.io/v3/blockchain/node/celo-mainnet",
         tracking: "yes",
         trackingDetails: privacyStatement.tatum,
+      },
+      {
+        url: "https://celo.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
+      },
+      {
+        url: "wss://celo.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
       },
     ],
   },
@@ -2179,8 +2201,14 @@ export const extraRpcs = {
     ],
   },
   30: {
-    rpcs: ["https://public-node.rsk.co"],
+    rpcs: [
+      "https://mycrypto.rsk.co",
+      "https://public-node.rsk.co",
+      "https://rootstock.drpc.org",
+      "wss://rootstock.drpc.org",
+    ],
   },
+
   4689: {
     rpcs: [
       {
@@ -2225,6 +2253,16 @@ export const extraRpcs = {
         url: "https://1rpc.io/oktc",
         tracking: "none",
         trackingDetails: privacyStatement.onerpc,
+      },
+      {
+        url: "https://oktc.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
+      },
+      {
+        url: "wss://oktc.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
       },
     ],
   },
@@ -2422,7 +2460,7 @@ export const extraRpcs = {
     rpcs: ["https://rpc.callisto.network", "https://clo-geth.0xinfra.com/"],
   },
   108: {
-    rpcs: ["https://mainnet-rpc.thundercore.com"],
+    rpcs: ["https://mainnet-rpc.thundercore.com", "https://thundercore.drpc.org", "wss://thundercore.drpc.org"],
   },
   20: {
     rpcs: [
@@ -2956,8 +2994,9 @@ export const extraRpcs = {
   1001: {
     rpcs: [
       "https://public-en-baobab.klaytn.net",
+      "https://public-en.kairos.node.kaia.io",
       {
-        url: "https://klaytn-baobab-rpc.allthatnode.com:8551",
+        url: "https://klaytn-baobab.g.allthatnode.com/full/evm",
         tracking: "yes",
         trackingDetails: privacyStatement.allthatnode,
       },
@@ -3271,6 +3310,26 @@ export const extraRpcs = {
         tracking: "limited",
         trackingDetails: privacyStatement.blockpi,
       },
+      {
+        url: "https://7001.rpc.thirdweb.com",
+        tracking: "yes",
+        trackingDetails: privacyStatement.thirdweb,
+      },
+      {
+        url: "https://zetachain-athens.g.allthatnode.com/archive/evm",
+        tracking: "yes",
+        trackingDetails: privacyStatement.allthatnode,
+      },
+      {
+        url: "https://zeta-chain-testnet.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
+      },
+      {
+        url: "https://zetachain-testnet.public.blastapi.io",
+        tracking: "limited",
+        trackingDetails: privacyStatement.blastapi,
+      },
     ],
   },
   7000: {
@@ -3281,24 +3340,24 @@ export const extraRpcs = {
         trackingDetails: privacyStatement.blockpi,
       },
       {
-        url: "https://zetachain-mainnet-archive.allthatnode.com:8545",
+        url: "https://zetachain-mainnet.g.allthatnode.com/archive/evm",
         tracking: "yes",
         trackingDetails: privacyStatement.allthatnode,
       },
       {
-        url: "wss://zetachain-mainnet-archive.allthatnode.com:8546",
+        url: "https://zeta-chain.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
+      },
+      {
+        url: "https://zetachain-mainnet.public.blastapi.io",
+        tracking: "limited",
+        trackingDetails: privacyStatement.blastapi,
+      },
+      {
+        url: "https://7000.rpc.thirdweb.com",
         tracking: "yes",
-        trackingDetails: privacyStatement.allthatnode,
-      },
-      {
-        url: "https://zeta.rpcgrid.com",
-        tracking: "none",
-        trackingDetails: privacyStatement.rpcgrid,
-      },
-      {
-        url: "wss://zeta.rpcgrid.com",
-        tracking: "none",
-        trackingDetails: privacyStatement.rpcgrid,
+        trackingDetails: privacyStatement.thirdweb,
       },
     ],
   },
@@ -3480,6 +3539,8 @@ export const extraRpcs = {
       "https://alphab.ai/rpc/eth/evmos_testnet",
       "https://t-evmos-jsonrpc.kalia.network",
       "https://jsonrpc-evmos-testnet.mzonder.com",
+      "https://evmos.drpc.org",
+      "wss://evmos.drpc.org",
     ],
   },
   9001: {
@@ -4596,6 +4657,16 @@ export const extraRpcs = {
         tracking: "limited",
         trackingDetails: privacyStatement["4everland"],
       },
+      {
+        url: "https://taiko.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
+      },
+      {
+        url: "wss://taiko.drpc.org",
+        tracking: "none",
+        trackingDetails: privacyStatement.drpc,
+      },
     ],
   },
   167008: {
@@ -4876,6 +4947,8 @@ export const extraRpcs = {
       "https://evm-archive.dymd.bitszn.com",
       "https://dymension.liquify.com/json-rpc",
       "https://dymension-evm.kynraze.com",
+      "https://dymension.drpc.org",
+      "wss://dymension.drpc.org",
     ],
   },
   7070: {
@@ -4941,9 +5014,6 @@ export const extraRpcs = {
   7171: {
     rpcs: ["https://connect.bit-rock.io", "https://brockrpc.io"],
   },
-  7000: {
-    rpcs: ["https://zetachain-evm.blockpi.network/v1/rpc/public"],
-  },
   28882: {
     rpcs: [
       "https://sepolia.boba.network/",
@@ -5005,6 +5075,9 @@ export const extraRpcs = {
   2014: {
     rpcs: ["https://rpc.nowscan.io"],
   },
+  16180: {
+    rpcs: ["https://subnets.avax.network/plyr/mainnet/rpc"],
+  },
   62831: {
     rpcs: ["https://subnets.avax.network/plyr/testnet/rpc"],
   },
@@ -5041,6 +5114,25 @@ export const extraRpcs = {
   },
   80084: {
     rpcs: ["https://bartio.rpc.berachain.com"],
+  },
+  328527: {
+    rpcs: [
+      {
+        url: "https://rpc.nal.network",
+        tracking: "yes",
+        trackingDetails: privacyStatement.nal
+      },
+      "wss://wss.nal.network",
+    ],
+  },
+  17071: {
+    rpcs: [
+      {
+        url: "https://rpc.onchainpoints.xyz",
+        tracking: "yes",
+        trackingDetails: privacyStatement.conduit
+      }
+    ],
   },
 };
 const allExtraRpcs = mergeDeep(llamaNodesRpcs, extraRpcs);
