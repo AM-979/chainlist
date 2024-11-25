@@ -2451,6 +2451,8 @@ export const extraRpcs = {
       "https://babel-api.mainnet.iotex.io",
       "https://babel-api.mainnet.iotex.one",
       "https://babel-api.fastblocks.io",
+      "https://rpc.depinscan.io/iotex",
+      "https://rpc.chainanalytics.org/iotex",
       {
         url: "https://iotexrpc.com",
         tracking: "limited",
@@ -5420,11 +5422,6 @@ export const extraRpcs = {
   42793: {
     rpcs: [
       "https://node.mainnet.etherlink.com",
-      {
-        url: "https://etherlink-mainnet-pub-l5p9tu.zeeve.net/rpc",
-        tracking: "none",
-        trackingDetails: privacyStatement.zeeve,
-      },
     ],
   },
   881: {
@@ -6082,7 +6079,18 @@ export const extraRpcs = {
     rpcs: [
       "https://governors.mainnet.redbelly.network"
     ]
+  },
+  78600: {
+    rpcs: [
+      "https://rpc-vanguard.vanarchain.com"
+    ]
+  },
+  2040: {
+    rpcs: [
+      "https://rpc.vanarchain.com"
+    ]
   }
+  
 };
 const allExtraRpcs = mergeDeep(llamaNodesRpcs, extraRpcs);
 
